@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodoaCodo- Snackeame</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Carrito de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    <header>
-        <img class="logo" src="./img/logo2.png" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Combos</a></li>
-                <li><a href="#">Descuentos</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+    <header >
+        
+        <button id="mostrar-ofertas" data-mostrar="true">Ofertas</button>
+        <button id="mostrar-descuentos" data-mostrar="false">Descuentos</button>
+        <button id="mostrar-combos" data-mostrar="false">Combos</button>
+        <a href="Formulario/Ingresar.html" class="boton-enlace">Ingresar</a>
+        <a href="Formulario/Formulario_Contacto.html" class="boton-enlace">Contacto</a>
+        
+        <input type="text" id="filtro" placeholder="Buscar productos...">
     </header>
+
+    <section id="carrito-productos" class="container">
+        <!-- Productos -->
+    </section>
+
+    <section id="ofertas" style="display: none" class="container">
+        <!-- Productos de ofertas -->
+    </section>
+
+    <section id="descuentos" style="display: none" class="container">
+        <!-- Productos con descuentos -->
+    </section>
+
+    <section id="combos" style="display: none" class="container">
+        <!-- Productos con descuentos -->
+    </section>
+
     
-    <script src="./js/main.js"></script>
+    <script src="main.js"></script>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="" alt="TiendaSnacks" style="width: 150px;">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una empresa joven, radicada en la ciudad de La Plata, nacida en el año 2014.</p>
+                
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>TiendaSnacks</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 </body>
 </html>
