@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+    <header >
+        
+        <button id="mostrar-ofertas" data-mostrar="true">Ofertas</button>
+        <button id="mostrar-descuentos" data-mostrar="false">Descuentos</button>
+        <button id="mostrar-combos" data-mostrar="false">Combos</button>
+        <a href="ingresar.html" class="boton-enlace">Ingresar</a>
+        <a href="contacto.html" class="boton-enlace">Contacto</a>
+        
+        <input type="text" id="filtro" placeholder="Buscar productos...">
+        <button id="boton-carrito">Carrito</button>
+    </header>
+
+    <section id="carousel" class="container">
+        <!-- Caurousel -->
+    </section>
+
+    <section id="carrito-productos" class="container">
+        <!-- Productos -->
+    </section>
+
+    <section id="ofertas" style="display: none" class="container">
+        <!-- Productos de ofertas -->
+    </section>
+
+    <section id="descuentos" style="display: none" class="container">
+        <!-- Productos con descuentos -->
+    </section>
+
+    <section id="combos" style="display: none" class="container">
+        <!-- Productos con descuentos -->
+    </section>
+
+    <h2 class="titulo-1">PROXIMOS PRODUCTOS A TRAER</h2>
+    <div class="slider-frame">
+        <ul>
+            <li><img src="img/slider1.webp" alt=""></li>
+            <li><img src="img/slider2.webp" alt=""></li>
+            <li><img src="img/slider3.webp" alt=""></li>
+            <li><img src="img/slider4.webp" alt=""></li>
+        </ul>
+    </div>
+   
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una empresa joven, radicada en la ciudad de La Plata, nacida en el año 2014.</p>
+                
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <p id="temperatura-valor"></p>
+                    <p id="temperatura-descripcion"></p>
+                    <p id="ubicacion"></p>
+                    <img id="icono-clima" src="" alt="" height="64px" width="64px">
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>TiendaSnacks</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    
+    <script src="js/apiclima.js"></script>
+    <script src="js/main.js"    ></script>
+    <script src="js/carousel.js"></script>
+
+</body>
+</html>
