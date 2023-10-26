@@ -1,0 +1,121 @@
+/* Estilos generales para todos los tamaños de pantalla */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f5f5;
+    color: white;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+    background-image: url(../img/fondo.jpg);
+}
+
+/* Agrega un contenedor para el título y el icono */
+#title-container {
+    display: flex; /* Utiliza un diseño de fila para alinear los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+
+/* Estiliza el icono */
+#home-button i {
+    font-size: 24px;
+    margin-right: 10px; /* Añade margen a la derecha para separar el icono del título */
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto; /* Centrar el contenido en todos los tamaños de pantalla */
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estiliza el título del formulario de contacto */
+.logo {
+    text-align: center;
+    font-size: 2em; /* Ajusta el tamaño según tus preferencias */
+    color: rgb(240, 238, 238);
+}
+
+.logo span {
+    color: orange;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: block; /* Cambiar a un diseño de bloque en tamaños pequeños de pantalla */
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    margin: 0; /* Eliminar el margen en tamaños pequeños de pantalla */
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid orange;
+}
+
+.contact-form form button {
+    background: orange;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: orange;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 700px) */
+@media (max-width: 700px) {
+    body {
+        padding: 0 1.5em; /* Restaurar el espaciado en tamaños pequeños de pantalla */
+    }
+    .logo {
+        font-size: 1.5em; /* Reducir aún más el tamaño del logo para pantallas muy pequeñas */
+    }
+    .contact-wrapper > * {
+        padding: 1em; /* Restaurar el espaciado en tamaños pequeños de pantalla */
+    }
+}
+
+/* Añadir más estilos específicos para tablets si es necesario */
+@media (min-width: 701px) and (max-width: 1024px) {
+    /* Agregar estilos específicos para tablets aquí */
+}
