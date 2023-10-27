@@ -12,8 +12,7 @@ var imgHeight = 200; // height of images (unit: px)
 
 
 // Link of background music - set 'null' if you dont want to play background music
-var bgMusicURL =
-  "https://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_2MB_MP3.mp3";
+var bgMusicURL = null
 var bgMusicControls = false; // Show UI music control
 
 /*
