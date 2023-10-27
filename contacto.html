@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario_Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contacto.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/validacion.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <article>
+        <div class="content">
+            <div id="title-container">
+                <a id="home-button" href="index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+                <h1 class="logo">Formulario De <span>Contacto</span></h1>
+            </div>
+
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Contactanos</h3>
+                    <form id="idFormulario" action="procesar.php">
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input id="idNombre" type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input id="idEmail" type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Numero Telefonico</label>
+                            <input id="idTelefono" type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Motivo De Contacto</label>
+                            <input id="idMotivo" type="text" name="affair">
+                        </p>
+                        <p class="block">
+                        <label>Mensaje</label> 
+                            <textarea id="idMensaje" name="message" rows="3"></textarea>
+                        </p>
+                        <p id="mensajeError" class="block msgErr"></p>
+                        <p class="block">
+                            <button>
+                                enviar
+                            </button>
+                        </p>
+                    </form>
+                    <h2>Ubicación:</h2>
+                    Cuesta del Portezuelo, Catamarca.
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112232.59965698056!2d-65.66895186320495!3d-28.47145233432448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942431b1482fb4ed%3A0x9c85dfc2cba1b740!2sHoster%C3%ADa%20Cuesta%20Del%20Portezuelo!5e0!3m2!1ses!2sar!4v1697333208260!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </article>
+    
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una empresa joven, radicada en la ciudad de La Plata, nacida en el año 2014.</p>
+                
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <p id="temperatura-valor"></p>
+                    <p id="temperatura-descripcion"></p>
+                    <p id="ubicacion"></p>
+                    <img id="icono-clima" src="" alt="" height="64px" width="64px">
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>TiendaSnacks</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    
+    <script src="js/apiclima.js"></script>
+    <script src="js/validar.js"></script>
+</body>
+</html>

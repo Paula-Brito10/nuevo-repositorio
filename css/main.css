@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(img/fondo3.jpg);
+    background-image: url(../img/fondo3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,6 +11,8 @@ body {
 /* Estilos para el encabezado */
 header {
     position: fixed;
+    z-index: 100;
+    background: rgb(20, 74, 128);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,8 +81,13 @@ a[href="Formulario_Contacto.html"] {
    
 }
 
+.boton-enlace:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
 #carrito-productos {
-    margin-top: 60px; /* Ajusta este valor según la altura de tu encabezado */
+    margin-top: 0px; /* Ajusta este valor según la altura de tu encabezado */
 }
 
 /* Asegurar que el encabezado no oculte el contenido de carritos al hacer scroll */
@@ -95,7 +102,10 @@ a[href="Formulario_Contacto.html"] {
     justify-content: center;
     gap: 18px;
     padding: 15px;
-    margin: 50px auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 15px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -207,10 +217,58 @@ a[href="Formulario_Contacto.html"] {
     color: aqua;
 }
 
+.titulo-1 {
+    text-align: center;
+    color: white;
+    background-color: orange;
+}
+
+
+/* slider */
+.slider-frame {
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    justify-content: center; /* Centra las imágenes inicialmente */
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 40%;
+}
+
+@keyframes slide {
+    0% { margin-left: 25%; } /* Cambia el valor de inicio para centrar */
+    20% { margin-left: 25%; }
+    
+    25% { margin-left: -75%; }
+    45% { margin-left: -75%; }
+    
+    50% { margin-left: -175%; }
+    70% { margin-left: -175%; }
+    
+    75% { margin-left: -275%; }
+    100% { margin-left: -275%; }
+}
+/* slider */
+
 /* Estilos del footer para pantallas grandes */
 .pie-pagina {
     width: 100%;
     background-color: #0a141d;
+    color: white;
 }
 
 /* Estilos para el grupo 1 del footer en pantallas grandes */
@@ -219,7 +277,7 @@ a[href="Formulario_Contacto.html"] {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
 }

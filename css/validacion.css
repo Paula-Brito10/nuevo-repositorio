@@ -1,0 +1,9 @@
+.msgErr {
+    font-size: small;
+    color: lightcoral;
+    margin: 0px !important;
+}
+
+.contact-form > h2 {
+    margin: 50px 0px 0px;
+}

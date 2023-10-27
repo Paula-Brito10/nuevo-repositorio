@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 <body>
     <header >
@@ -16,11 +22,16 @@
         <button id="mostrar-ofertas" data-mostrar="true">Ofertas</button>
         <button id="mostrar-descuentos" data-mostrar="false">Descuentos</button>
         <button id="mostrar-combos" data-mostrar="false">Combos</button>
-        <a href="Formulario/Ingresar.html" class="boton-enlace">Ingresar</a>
-        <a href="Formulario/Formulario_Contacto.html" class="boton-enlace">Contacto</a>
+        <a href="ingresar.html" class="boton-enlace">Ingresar</a>
+        <a href="contacto.html" class="boton-enlace">Contacto</a>
         
         <input type="text" id="filtro" placeholder="Buscar productos...">
+        <button id="boton-carrito">Carrito</button>
     </header>
+
+    <section id="carousel" class="container">
+        <!-- Caurousel -->
+    </section>
 
     <section id="carrito-productos" class="container">
         <!-- Productos -->
@@ -38,14 +49,22 @@
         <!-- Productos con descuentos -->
     </section>
 
-    
-    <script src="main.js"></script>
+    <h2 class="titulo-1">PROXIMOS PRODUCTOS A TRAER</h2>
+    <div class="slider-frame">
+        <ul>
+            <li><img src="img/slider1.webp" alt=""></li>
+            <li><img src="img/slider2.webp" alt=""></li>
+            <li><img src="img/slider3.webp" alt=""></li>
+            <li><img src="img/slider4.webp" alt=""></li>
+        </ul>
+    </div>
+   
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="" alt="TiendaSnacks" style="width: 150px;">
+                        
                     </a>
                 </figure>
             </div>
@@ -63,10 +82,23 @@
                     <a href="#" class="fa fa-youtube"></a>
                 </div>
             </div>
+            <div class="box">
+                <div>
+                    <p id="temperatura-valor"></p>
+                    <p id="temperatura-descripcion"></p>
+                    <p id="ubicacion"></p>
+                    <img id="icono-clima" src="" alt="" height="64px" width="64px">
+                </div>
+            </div>
         </div>
         <div class="grupo-2">
             <small>&copy; 2021 <b>TiendaSnacks</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
+    
+    <script src="js/apiclima.js"></script>
+    <script src="js/main.js"    ></script>
+    <script src="js/carousel.js"></script>
+
 </body>
 </html>
