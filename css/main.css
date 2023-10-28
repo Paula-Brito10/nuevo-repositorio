@@ -310,6 +310,10 @@ a[href="Formulario_Contacto.html"] {
     font-size: 15px;
 }
 
+#datos-clima {
+    text-align: center;
+}
+
 /* Estilos del footer para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .pie-pagina {
