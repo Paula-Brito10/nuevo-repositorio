@@ -5,6 +5,7 @@ window.addEventListener('load', (event) => {
     let ubicacion              = document.getElementById('ubicacion')
     let iconoClima             = document.getElementById('icono-clima')
 
+    iconoClima.src = 'img/sinubicacion.png'
     if( navigator.geolocation ) {
         navigator.geolocation.getCurrentPosition( mostrarClima )
     } else {
